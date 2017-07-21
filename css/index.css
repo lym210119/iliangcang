@@ -1,0 +1,293 @@
+/*
+* @Author: liyangming
+* @Date:   2017-07-21 14:53:06
+* @Last Modified by:   liyangming
+* @Last Modified time: 2017-07-21 21:34:32
+*/
+
+html{
+	/*rem的参考*/
+	font-size: 14px;
+}
+@media screen and (min-width:400px){
+	html{
+		font-size: 18px;
+	}
+}
+body {
+	margin-top: 5.4rem;
+	margin-bottom: 2.85rem;
+	width: 100%;
+	height: 100%;
+}
+
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+a {
+	text-decoration: none;
+}
+
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 5.4rem;
+	overflow: hidden;
+	z-index: 999;
+}
+header .head {
+	position: relative;
+	width: 100%;
+	height: 3rem;
+	background: url(../images/topBg.png);
+	background-size: 100% 100%;
+}
+header .head span.close {
+	position: absolute;
+	top: 50%;
+	left: 6px;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	transform: translateY(-50%);
+}
+header .head span.close img {
+	width: 100%;
+	height: 100%;
+}
+header .head span.download {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	width: 75px;
+	height: 25px;
+	transform: translateY(-50%);
+}
+header .head span.download img {
+	width: 100%;
+	height: 100%;
+}
+header .search {
+	width: 100%;
+	height: 2.4rem;
+	line-height: 2.4rem;
+	background: url(../images/searchBox.png);
+	background-size: 100% 100%;
+}
+header .search input {
+	margin-left: 20px;
+	border: none;
+	outline: none;
+}
+header .search span.search-btn {
+	width: 2.4rem;
+	height: 100%;
+}
+
+
+/*banner*/
+
+.banner {
+	width: 100%;
+	height: 12.66rem;
+}
+
+.carousel {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel ul {
+    list-style: none;
+}
+
+.carousel ul li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.carousel ul li img {
+    width: 100%;
+}
+
+.circles {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    z-index: 998;
+    width: 50%;
+    height: 25px;
+}
+
+.circles ul {
+    list-style: none;
+    text-align: center;
+    line-height: 25px;
+}
+
+.circles ul li {
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+    width: 0.2666rem;
+    height: 0.2666rem;
+    border-radius: 50%;
+    background: rgba(0,0,0,.2);
+}
+
+.circles ul li.cur {
+    background-color: #007aff;
+}
+
+
+
+
+
+section {
+	width: 100%;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+section h3 {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+section h3 img {
+	width: 80px;
+	height: 12px;
+}
+section  ul.goods {
+	overflow: hidden;
+}
+
+section ul.goods li {
+	float: left;
+	width: 30%;
+	height: 10.64rem;
+	margin-left: 0.6rem;
+	margin-bottom: 0.6rem;
+	background: rgb(241,241,241);
+}
+section ul.goods li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	font-size: 12px;
+	color: #000;
+}
+section ul.goods li a img {
+	width: 100%;
+	height: 60%;
+}
+section ul.goods li a p {
+	padding: 0 5px;
+    line-height: 1.5;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+section ul.goods li a span {
+	display: block;
+	text-align: center;
+}
+section .foot-nav {
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+	width: 100%;
+	overflow: hidden;
+}
+section .foot-nav ul li {
+	float: left;
+	margin-left: 0.6rem;
+	margin-bottom: 0.6rem;
+	width: 30%;
+	height: 5rem;
+}
+section .foot-nav ul li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+section .foot-nav ul li a img {
+	width: 100%;
+	height: 100%;
+}
+
+section .service {
+	width: 100%;
+	margin-bottom: 1rem;
+}
+section .service p {
+	text-align: center;
+	font-size: 16px;
+}
+section .service p a {
+	color: #000;
+}
+section .service p:last-child {
+	color: #c2c2c2;
+	font-size: 10px;
+}
+section .service p:first-child{
+	padding: 0 1rem;
+}
+section .service p:first-child img {
+	width: 100%;
+	height: 100%;
+}
+
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2.85rem;
+	background-color: #000;
+	z-index: 999;
+}
+
+footer ul {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+footer ul li {
+	float: left;
+	width: 25%;
+	height: 100%;
+	line-height: 100%;
+	text-align: center;
+}
+footer ul li a {
+	display: inline-block;
+	width: 1.8rem;
+	height: 2rem;
+	margin-top: 0.5rem;
+	opacity: .7;
+}
+footer ul li:first-child a {
+	opacity: 1;
+}
+footer ul li a img {
+	width: 100%;
+	height: 100%;
+}
