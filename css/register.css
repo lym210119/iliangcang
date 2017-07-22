@@ -1,0 +1,28 @@
+/*
+* @Author: liyangming
+* @Date:   2017-07-22 11:06:34
+* @Last Modified by:   liyangming
+* @Last Modified time: 2017-07-22 11:33:19
+*/
+
+header .head {
+	width: 100%;
+	height: 2.66rem;
+	line-height: 2.66rem;
+	background: #24272f;
+
+}
+header .head a::before {
+	content: "";
+	display: inline-block;
+	margin: 10px;
+	vertical-align: bottom;
+	width: 20px;
+	height: 20px;
+	background: url(../images/logo.png) no-repeat;
+	background-size: 20px 20px; 
+}
+header .head a {
+	color: #fff;
+
+}

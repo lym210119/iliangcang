@@ -2,10 +2,20 @@
 * @Author: liyangming
 * @Date:   2017-07-21 17:10:02
 * @Last Modified by:   liyangming
-* @Last Modified time: 2017-07-22 10:37:39
+* @Last Modified time: 2017-07-22 10:53:14
 */
 
 'use strict';
+
+(function(){
+	var close = document.querySelector(".close");
+	console.log(close);
+	var head = document.querySelector(".head");
+	close.addEventListener('click', function(){
+		head.style.display = "none";
+		document.body.style.marginTop = "2.4rem";
+	}, false)
+})();
 
 
 
