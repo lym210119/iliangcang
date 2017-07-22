@@ -2,11 +2,15 @@
 * @Author: liyangming
 * @Date:   2017-07-21 17:10:02
 * @Last Modified by:   liyangming
-* @Last Modified time: 2017-07-21 20:24:46
+* @Last Modified time: 2017-07-22 10:37:39
 */
 
 'use strict';
 
+
+
+
+// ajax 
 (function(){
 	var url = "http://h6.duchengjiu.top/shop/api_goods.php";
 	var xhr = new XMLHttpRequest();
@@ -138,7 +142,7 @@
         if (event.touches.length > 1) return;
 
         // 记录偏移值
-        deltaX = event.touches[0].clientX;
+        
         startX = event.touches[0].clientX;
 
         // 记录时间
