@@ -1,0 +1,111 @@
+/*
+* @Author: liyangming
+* @Date:   2017-07-22 15:47:42
+* @Last Modified by:   liyangming
+* @Last Modified time: 2017-07-22 18:09:41
+*/
+
+body {
+	padding-top: 5.4rem;
+	padding-bottom: 2.85rem;
+	width: 100%;
+	height: 100%;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 5.4rem;
+	overflow: hidden;
+	z-index: 999;
+}
+header .head {
+	position: relative;
+	width: 100%;
+	height: 3rem;
+	background: url(../images/topBg.png);
+	background-size: 100% 100%;
+}
+header .head span.close {
+	position: absolute;
+	top: 50%;
+	left: 6px;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	transform: translateY(-50%);
+}
+header .head span.close img {
+	width: 100%;
+	height: 100%;
+}
+header .head span.download {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	width: 75px;
+	height: 25px;
+	transform: translateY(-50%);
+}
+header .head span.download img {
+	width: 100%;
+	height: 100%;
+}
+header .search {
+	width: 100%;
+	height: 2.4rem;
+	line-height: 2.4rem;
+	background: url(../images/searchBox.png);
+	background-size: 100% 100%;
+}
+header .search input {
+	margin-left: 20px;
+	border: none;
+	outline: none;
+}
+header .search span.search-btn {
+	float: right;
+	width: 2.8rem;
+	height: 100%;
+}
+
+
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2.85rem;
+	background-color: #000;
+	z-index: 999;
+}
+
+footer ul {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+footer ul li {
+	float: left;
+	width: 25%;
+	height: 100%;
+	line-height: 100%;
+	text-align: center;
+}
+footer ul li a {
+	display: inline-block;
+	width: 1.8rem;
+	height: 2rem;
+	margin-top: 0.5rem;
+	opacity: .7;
+}
+footer ul li:first-child a {
+	opacity: 1;
+}
+footer ul li a img {
+	width: 100%;
+	height: 100%;
+}

@@ -2,7 +2,7 @@
 * @Author: liyangming
 * @Date:   2017-07-21 17:10:02
 * @Last Modified by:   liyangming
-* @Last Modified time: 2017-07-22 10:53:14
+* @Last Modified time: 2017-07-22 19:54:39
 */
 
 'use strict';
@@ -20,9 +20,10 @@
 
 
 
+
 // ajax 
 (function(){
-	var url = "http://h6.duchengjiu.top/shop/api_goods.php";
+	var url = "http://h6.duchengjiu.top/shop/api_goods.php?pagesize=12";
 	var xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function() {
 		if (xhr.readyState === 4 && xhr.status === 200) {
@@ -32,7 +33,7 @@
 			var goods = document.querySelector("#goods");
 			console.log(goods);
 			
-			for (var i = 1; i < obj.length; i++) {
+			for (var i = 0; i < obj.length; i++) {
 				var li = document.createElement("li");
 				var a = document.createElement("a");
 				a.href = "detail.html?goods_id=" + obj[i].goods_id;
