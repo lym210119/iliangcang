@@ -1,0 +1,159 @@
+/*
+* @Author: liyangming
+* @Date:   2017-07-24 11:32:12
+* @Last Modified by:   liyangming
+* @Last Modified time: 2017-07-24 16:12:09
+*/
+body {
+	padding-top: 2.8rem;
+	padding-bottom: 3rem;
+}
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2.8rem;
+	line-height: 2.8rem;
+	background: #000;
+	color: #fff;
+}
+header .top-head {
+	width: 100%;
+	height: 2.8rem
+}
+header .top-head div {
+	float: left;
+	font-size: 12px;
+}
+header .top-head div:nth-child(1){
+	text-align: center;
+	width: 20%;
+	height: 2.8rem;
+}
+header .top-head div:nth-child(1) a{
+	color: #fff;
+}
+header .top-head div:nth-child(1) a::before {
+	content: "";
+	display: inline-block;
+	margin-right: 6px;
+	vertical-align: text-bottom;
+	width: 1.2rem;
+	height: 1.2rem;
+	background: url(../images/logo.png) no-repeat;
+	background-size: 18px 18px;
+}
+header .top-head div:nth-child(2){
+	width: 60%;
+	height: 2.8rem;
+	text-align: center;
+}
+header .top-head div:nth-child(3){
+	width: 20%;
+	height: 2.8rem;
+	float: right;
+	text-align: center;
+}
+header .top-head div:nth-child(3) a {
+	font-size: 12px;
+	color: #fff;
+}
+
+section {
+	margin-top: 0;
+}
+section .goods-pic {
+	width: 100%;
+	height: 18rem;
+}
+section .goods-pic img {
+	width: 100%;
+	height: 100%;
+}
+section .goods-desc {
+	padding: 1rem;
+	font-size: 14px;
+
+}
+section .price {
+	padding-left: 1rem;
+	color: #0c79cc;
+}
+section .shipNote {
+	padding: 0.5rem 0;
+	margin: 0 1rem;
+	border-bottom: 1px solid #e5e5e5;
+	font-size: 12px;
+}
+section .shipNote span:first-child::before {
+	content: "";
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin-right: 5px;
+	vertical-align: bottom;
+	background: url(../images/shipNote1.png) no-repeat;
+	background-size: 14px 14px;
+}
+section .shipNote span:last-child::before {
+	content: "";
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin-right: 5px;
+	vertical-align: bottom;
+	background: url(../images/shipNote2.png) no-repeat;
+	background-size: 14px 14px;
+}
+section h5 {
+	padding: 1rem;
+}
+section ul {
+	margin: 0 1rem;
+	padding-bottom: 0.5rem;
+	overflow: hidden;
+	border-bottom: 1px solid #e5e5e5;
+}
+section ul li {
+	float: left;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	border:1px solid #d9d9d9;
+	box-sizing: border-box;
+}
+section ul li.nums {
+	width: 50px;
+	border-left: 0;
+	border-right: 0;
+}
+
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	background: #60a9d7;
+	color: #fff;
+	z-index: 999;
+}
+footer a {
+	display: block;
+	float: left;
+	width: 49%;
+	color: #fff;
+	text-align: center;
+	font-size: 12px;
+}
+footer b {
+	border: 1px solid #fff;
+	margin-left: -1px;
+	float: left;
+	line-height: 2.5rem;
+	height: 35px;
+
+}

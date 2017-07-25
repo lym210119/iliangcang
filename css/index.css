@@ -2,7 +2,7 @@
 * @Author: liyangming
 * @Date:   2017-07-21 14:53:06
 * @Last Modified by:   liyangming
-* @Last Modified time: 2017-07-22 18:11:39
+* @Last Modified time: 2017-07-24 19:40:15
 */
 
 body {
@@ -12,7 +12,7 @@ body {
 	height: 100%;
 }
 
-header {
+/*header {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -20,7 +20,7 @@ header {
 	height: 5.4rem;
 	overflow: hidden;
 	z-index: 999;
-}
+}*/
 header .head {
 	position: relative;
 	width: 100%;
@@ -29,13 +29,14 @@ header .head {
 	background-size: 100% 100%;
 }
 header .head span.close {
-	position: absolute;
+/*	position: absolute;
 	top: 50%;
-	left: 6px;
+	left: 6px;*/
+	margin-left: 5px;
 	display: inline-block;
 	width: 15px;
 	height: 15px;
-	transform: translateY(-50%);
+
 }
 header .head span.close img {
 	width: 100%;
@@ -53,19 +54,23 @@ header .head span.download img {
 	width: 100%;
 	height: 100%;
 }
-header .search {
+.search {
+	position: fixed;
+	top: 3rem;
+	left: 0;
 	width: 100%;
 	height: 2.4rem;
 	line-height: 2.4rem;
 	background: url(../images/searchBox.png);
 	background-size: 100% 100%;
+	z-index: 999;
 }
-header .search input {
+.search input {
 	margin-left: 20px;
 	border: none;
 	outline: none;
 }
-header .search span.search-btn {
+.search span.search-btn {
 	float: right;
 	width: 2.8rem;
 	height: 100%;
@@ -225,6 +230,9 @@ footer ul li a {
 }
 footer ul li:first-child a {
 	opacity: 1;
+}
+footer ul li:last-child {
+	display: none;
 }
 footer ul li a img {
 	width: 100%;

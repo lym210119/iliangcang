@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+       <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>登录</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/login.css">
+    </head>
+    <body>
+    	<div class="register_box">
+    		<ul>
+    			<li class="logo">
+    				<img src="images/login_logo.png" alt="">
+    			</li>
+    			<li class="username INT">
+    			  <span class="username_logo Logo"></span>
+    			  <input type="text" name="username" placeholder="用户名/邮箱/手机号">
+                </li>
+    			<li class="password INT">
+    			  <span class="password_logo Logo"></span>
+    			  <input type="password" name="password" placeholder="用户密码"></li>
+    			<li class="checked_box">
+    			  <input type="checkbox" checked="checked">
+    			  <span>自动登录</span>
+    			</li>
+    			<li id="login">登录粮仓</li>
+    			<li class="other_login">
+    				<a class="login_style" href=""></a>
+    				<a class="login_style" href=""></a>
+    				<a class="login_style" href=""></a>
+    				<a href="register.html">注册粮仓</a>
+    			</li>
+    		</ul>
+    	</div>
+        <script src="js/zepto.js" charset="utf-8"></script>
+        <script type="text/javascript">
+          $(function(){
+            $('#login').click(function(){
+                var username = $('input[name="username"]').val();
+                var password = $('input[name="password"]').val();
+                $.ajax({
+                  "url": "http://h6.duchengjiu.top/shop/api_user.php",
+                  "type": "POST",
+                  "data": {
+                    "status": "login",
+                    "username": username,
+                    "password": password
+                  },
+                  "dataType": "json",
+                  "success": function(response) {
+                    console.log(response);
+                    //如果登录成功，把用户信息存储到本地
+                    // localStorage.setItem('token', response.data.token);
+                    if (response.code === 0) {
+                      var data = response.data;
+                      for (var prop in data) {
+                        if (data.hasOwnProperty(prop)) {
+                          localStorage.setItem(prop, data[prop]);
+                        }
+                      }
+                      //判断有callbackurl则跳回到指定的callbackurl页面, 否则跳到首页
+                      var callbackurl = location.hash.substr(13);
+                      if (callbackurl) {
+                        location.assign(callbackurl);
+                      } else {
+                        location.assign('index.html');
+                      }
+                    }
+
+                  }
+                });
+            })
+          })
+        </script>
+    </body>
+</html>

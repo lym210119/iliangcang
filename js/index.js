@@ -2,7 +2,7 @@
 * @Author: liyangming
 * @Date:   2017-07-21 17:10:02
 * @Last Modified by:   liyangming
-* @Last Modified time: 2017-07-22 19:54:39
+* @Last Modified time: 2017-07-24 21:35:29
 */
 
 'use strict';
@@ -15,6 +15,9 @@
 		head.style.display = "none";
 		document.body.style.marginTop = "2.4rem";
 	}, false)
+
+
+    $()
 })();
 
 

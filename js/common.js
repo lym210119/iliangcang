@@ -2,7 +2,7 @@
 * @Author: liyangming
 * @Date:   2017-07-22 15:31:51
 * @Last Modified by:   liyangming
-* @Last Modified time: 2017-07-22 17:58:24
+* @Last Modified time: 2017-07-24 20:13:00
 */
 
 'use strict';
@@ -47,7 +47,7 @@ window.shop = {
         },
         // 获取商品列表
         fetchGoodsListByCatId: function(cat_id, callback) {
-            $.get(shop.config.API_FREFIX + "api_goods.php", "cat_id=" + cat_id, callback, "json");
+            $.get(shop.config.API_FREFIX + "api_goods.php?pagesize=20&", "cat_id=" + cat_id, callback, "json");
         },
         // 获取商品详情
         fetchGoodsDetail: function(goods_id, callback) {
@@ -99,6 +99,7 @@ window.shop = {
                 "goods_id": goods_id,
                 "number": number
             };
+            console.log(goods_id, number);
             $.post(shop.config.API_FREFIX + "api_cart.php?token=" + shop.base.business.getToken(), data, callback, "json")
         },
         // 获取购物车
@@ -143,3 +144,20 @@ $('.search-btn').on("click", function(){
     location.href = "search.html?search_text=" + $('#search-text').val();
 })
    
+//判断当前用户已登录则显示用户名，否则显示登录注册
+if (localStorage.getItem("token")) {
+    $('.nav-login').hide();
+    $('.nav-order').show();
+}
+// $(".login-reg").children("a:last").click(function() {
+//     localStorage.clear();
+// });
+
+function updateCartInfo(goods_id, goods_number, callback) {
+    shop.api.updateCart(goods_id, goods_number, function(response){
+        console.log(response);
+        // 加入购物车了之后把商品ID和对应的数量存储到本地
+        shop.base.business.saveGoodsInfoOfCart(goods_id, goods_number);
+        callback(response);
+    })
+}

@@ -1,0 +1,102 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body,html{
+	width: 100%;
+	background: #000;
+}
+.register_box {
+	margin-top: 18%;
+    z-index: 10;
+    width: calc(100% - 66px);
+    padding: 0px 33px;
+}
+.register_box .logo img{
+	width: 100px;
+	height: 100px;
+	
+}
+.register_box .logo{
+	width: 60%;
+	transform: translateX(50%);
+}
+.username,.password{
+	margin-top: 10%;
+	float: left;
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid #ffffff;
+}
+.INT input{
+	float: left;
+    margin-top: 12px;;
+    height: 20px;
+    background: 0;
+    color: #fff;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+}
+.Logo{
+    float: left;
+	margin-top: 12px;
+	display:block;
+	width: 20px;
+	height: 20px;
+	border-right: 1px solid #fff;
+}
+.username_logo{
+	background: url(../images/login_user.png) no-repeat;
+	background-size: 100%;
+}
+.password_logo{
+	background: url(../images/login_pwd.png) no-repeat;
+	background-size: 100%;
+}
+.checked_box{
+	display: block;
+    
+	font-size: 100%;
+	color: #fff;
+}
+.checked_box input{
+	margin-top: 10%;
+}
+#login{
+	width: 100%;
+	height: 44px;
+	font-size: 100%;
+	background: #25292e;
+	line-height: 44px;
+	text-align: center;
+	color: #ffffff;
+	margin-top: 20%;
+}
+.other_login{
+	margin-top: 10%;
+}
+.login_style{
+	display: inline-block;
+	float: left;
+	margin-right: 15px;
+	width: 20px;
+	height: 20px;
+}
+.login_style:nth-child(1){
+	background: url(../images/qq-icon.png) no-repeat;
+    background-size: 100%;
+}
+.login_style:nth-child(2){
+	background: url(../images/sina-icon.png) no-repeat;
+    background-size: 100%;
+}
+.login_style:nth-child(3){
+	background: url(../images/douban-icon.png) no-repeat;
+    background-size: 100%;
+}
+.other_login a:nth-child(4){
+	float: right;
+	color: #fff;
+}
+

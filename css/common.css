@@ -2,8 +2,62 @@
 * @Author: liyangming
 * @Date:   2017-07-21 14:53:25
 * @Last Modified by:   liyangming
-* @Last Modified time: 2017-07-22 18:11:37
+* @Last Modified time: 2017-07-24 19:38:31
 */
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2.8rem;
+	line-height: 2.8rem;
+	background: #000;
+	color: #fff;
+	z-index: 999;
+}
+header .top-head {
+	width: 100%;
+	height: 2.8rem
+}
+header .top-head div {
+	float: left;
+	font-size: 12px;
+}
+header .top-head div:nth-child(1){
+	text-align: center;
+	width: 20%;
+	height: 2.8rem;
+}
+header .top-head div:nth-child(1) a{
+	color: #fff;
+}
+header .top-head div:nth-child(1) a::before {
+	content: "";
+	display: inline-block;
+	margin-right: 6px;
+	vertical-align: text-bottom;
+	width: 1.2rem;
+	height: 1.2rem;
+	background: url(../images/logo.png) no-repeat;
+	background-size: 18px 18px;
+}
+header .top-head div:nth-child(2){
+	width: 60%;
+	height: 2.8rem;
+	text-align: center;
+}
+header .top-head div:nth-child(3){
+	width: 20%;
+	height: 2.8rem;
+	float: right;
+	text-align: center;
+}
+header .top-head div:nth-child(3) a {
+	font-size: 12px;
+	color: #fff;
+}
+
+
 section {
 	width: 100%;
 	margin-top: 1rem;
@@ -46,4 +100,46 @@ section ul.goods li a p {
 section ul.goods li a span {
 	display: block;
 	text-align: center;
+}
+
+
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2.85rem;
+	background-color: #000;
+	z-index: 999;
+}
+
+footer ul {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+footer ul li {
+	float: left;
+	width: 25%;
+	height: 100%;
+	line-height: 100%;
+	text-align: center;
+}
+footer ul li a {
+	display: inline-block;
+	width: 1.8rem;
+	height: 2rem;
+	margin-top: 0.5rem;
+	opacity: .7;
+}
+footer ul li:first-child a {
+	opacity: 1;
+}
+footer ul li:last-child {
+	display: none;
+}
+footer ul li a img {
+	width: 100%;
+	height: 100%;
 }
