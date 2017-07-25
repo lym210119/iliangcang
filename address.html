@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    	<meta http-equiv="X-UA-Compatible" ie="edge">
+    	<title>地址</title>
+    	<link rel="stylesheet" href="css/reset.css">
+    	<link rel="stylesheet" href="css/common.css">
+    	<link rel="stylesheet" href="css/address.css">
+    </head>
+    <body>
+		<header>
+    		<a href="#">
+    			<img src="images/checkout-top.png" alt="">
+    		</a>
+    	</header>
+
+		<section>
+			<form action="">
+				<label for="">
+					<input type="text" name="address_name" placeholder="收件人">
+				</label>
+				<label for="">
+					<input type="text" name="mobile" placeholder="手机号">
+				</label>
+				<label for="">
+					<select name="province" id="">
+				          <option value="北京" region_id="2">北京</option><option value="安徽" region_id="3">安徽</option><option value="福建" region_id="4">福建</option><option value="甘肃" region_id="5">甘肃</option><option value="广东" region_id="6">广东</option><option value="广西" region_id="7">广西</option><option value="贵州" region_id="8">贵州</option><option value="海南" region_id="9">海南</option><option value="河北" region_id="10">河北</option><option value="河南" region_id="11">河南</option><option value="黑龙江" region_id="12">黑龙江</option><option value="湖北" region_id="13">湖北</option><option value="湖南" region_id="14">湖南</option><option value="吉林" region_id="15">吉林</option><option value="江苏" region_id="16">江苏</option><option value="江西" region_id="17">江西</option><option value="辽宁" region_id="18">辽宁</option><option value="内蒙古" region_id="19">内蒙古</option><option value="宁夏" region_id="20">宁夏</option><option value="青海" region_id="21">青海</option><option value="山东" region_id="22">山东</option><option value="山西" region_id="23">山西</option><option value="陕西" region_id="24">陕西</option><option value="上海" region_id="25">上海</option><option value="四川" region_id="26">四川</option><option value="天津" region_id="27">天津</option><option value="西藏" region_id="28">西藏</option><option value="新疆" region_id="29">新疆</option><option value="云南" region_id="30">云南</option><option value="浙江" region_id="31">浙江</option><option value="重庆" region_id="33">重庆</option>
+				          <option value="">所在省份</option>
+					</select>
+				</label>
+				<label for="">
+					<select name="city" id="">
+	          			<option value="">所在城市</option> 
+						<option value="武汉" region_id="180">武汉</option><option value="仙桃" region_id="181">仙桃</option><option value="鄂州" region_id="182">鄂州</option><option value="黄冈" region_id="183">黄冈</option><option value="黄石" region_id="184">黄石</option><option value="荆门" region_id="185">荆门</option><option value="荆州" region_id="186">荆州</option><option value="潜江" region_id="187">潜江</option><option value="神农架林区" region_id="188">神农架林区</option><option value="十堰" region_id="189">十堰</option><option value="随州" region_id="190">随州</option><option value="天门" region_id="191">天门</option><option value="咸宁" region_id="192">咸宁</option><option value="襄阳" region_id="193">襄阳</option><option value="孝感" region_id="194">孝感</option><option value="宜昌" region_id="195">宜昌</option><option value="恩施" region_id="196">恩施</option>    
+					</select>
+				</label>
+				<label for="">
+					<input type="text" name="address" placeholder="详细地址">
+				</label>
+				<div class="default" for="">
+					<input type="checkbox"><span>设置默认收货地址</span>
+				</div>
+			</form>
+		</section>
+
+		<footer>
+    		<a id="saveAdd" href="javascript:;">保存地址</a>
+    	</footer>
+
+    	<script src="js/zepto.js"></script>
+    	<script src="js/common.js"></script>
+    	<script src="js/address.js"></script>
+    </body>
+</html>

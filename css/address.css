@@ -1,0 +1,74 @@
+/*
+* @Author: liyangming
+* @Date:   2017-07-25 19:40:31
+* @Last Modified by:   liyangming
+* @Last Modified time: 2017-07-25 20:21:51
+*/
+body {
+	padding-top: 3.3rem;
+	padding-bottom: 2.85rem;
+}
+header {
+	width: 100%;
+	height: 3.3rem;
+}
+header a {
+	display: block;
+	height: 3.3rem;
+}
+header a img {
+	width: 100%;
+	height: 100%;
+}
+
+section {
+	margin: 15px;
+	width: none;
+}
+section form {
+	
+}
+section form label {
+	display: block;
+	margin: 10px 0;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #e5e5e5;
+	font-size: 12px;
+
+
+}
+section form label input[type=text] {
+	width: 100%;
+	height: 20px;
+	border: none;
+	outline: none;
+	text-indent: 10px;
+}
+section form label select {
+	width: 100%;
+	border: none;
+	outline: none;
+	text-indent: 5px;
+	color: #757575;
+}
+section form div.default {
+	margin: 20px 0;
+	font-size: 10px;
+	
+}
+section form div.default input {
+	vertical-align: bottom;
+}
+section form div.default span {
+	color: #757575;
+}
+
+
+footer {
+	line-height: 2.85rem;
+	text-align: center;
+}
+footer a {
+	color: #fff;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    	<meta http-equiv="X-UA-Compatible" ie="edge">
+    	<title>结算</title>
+    	<link rel="stylesheet" href="css/reset.css">
+    	<link rel="stylesheet" href="css/common.css">
+    	<link rel="stylesheet" href="css/checkout.css">
+    </head>
+    <body>
+    	<header>
+    		<a href="#">
+    			<img src="images/checkout-top.png" alt="">
+    		</a>
+    	</header>
+
+		<section>
+			<ul id="goods-list" class="goods-list">
+<!-- 				<li>
+					<div class="goods-pic"><img src="images/" alt=""></div>
+					<div class="goods-info">
+						<p></p>
+						<p>￥<em></em> x<i></i><span></span></p>
+						<p>免运费（限中国大陆）</p>
+					</div>
+				</li> -->
+			</ul>
+			<div class="beizhu">
+				<label for="">
+					<input type="text" placeholder="备注：">
+				</label>
+			</div>
+		</section>
+		<div class="address">
+			<ul id="addlist" class="addlist">
+
+			</ul>
+			<a href="address.html">添加新地址</a>
+		</div>
+    	<footer>
+    		<a href="#">共计：<em id="result"></em>元，用支付宝支付</a>
+    	</footer>
+
+    	<script src="js/zepto.js"></script>
+    	<script src="js/common.js"></script>
+    	<script src="js/checkout.js"></script>
+    </body>
+</html>

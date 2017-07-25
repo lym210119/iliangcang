@@ -2,7 +2,7 @@
 * @Author: liyangming
 * @Date:   2017-07-24 15:06:55
 * @Last Modified by:   liyangming
-* @Last Modified time: 2017-07-24 20:25:22
+* @Last Modified time: 2017-07-25 17:02:13
 */
 
 'use strict';
@@ -50,6 +50,7 @@ $("#cart-btn").click(function(){
 	console.log(localStorage.getItem("token"));
 	updateCartInfo(goods_id, goods_number, function(response){
 		console.log(response);
+		alert('加入购物车成功')
 		// location.href = "/cart.html";
 	});
 });

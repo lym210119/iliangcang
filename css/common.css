@@ -2,8 +2,9 @@
 * @Author: liyangming
 * @Date:   2017-07-21 14:53:25
 * @Last Modified by:   liyangming
-* @Last Modified time: 2017-07-24 19:38:31
+* @Last Modified time: 2017-07-25 19:55:33
 */
+
 header {
 	position: fixed;
 	top: 0;
@@ -59,7 +60,7 @@ header .top-head div:nth-child(3) a {
 
 
 section {
-	width: 100%;
+	/*width: 100%;*/
 	margin-top: 1rem;
 	overflow: hidden;
 }

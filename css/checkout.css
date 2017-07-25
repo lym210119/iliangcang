@@ -1,0 +1,152 @@
+/*
+* @Author: liyangming
+* @Date:   2017-07-25 16:44:45
+* @Last Modified by:   liyangming
+* @Last Modified time: 2017-07-25 21:28:22
+*/
+
+body {
+	padding-top: 3.3rem;
+	padding-bottom: 3.3rem;
+}
+header {
+	width: 100%;
+	height: 3.3rem;
+}
+header a {
+	display: block;
+	height: 3.3rem;
+}
+header a img {
+	width: 100%;
+	height: 100%;
+}
+section {
+	margin-top: 0;
+}
+section .goods-list {
+	width: 100%;
+	height: 100%;
+}
+section .goods-list li {
+	/*width: 100%;*/
+	/*height: 5.5rem;*/
+	overflow: hidden;
+	margin: 0 15px;
+	padding: 10px 0;
+	border-bottom: 1px solid #e5e5e5;
+}
+section .goods-list li div.goods-pic {
+	float: left;
+	width: 4rem;
+	height: 4rem;
+	border: 2px solid #e5e5e5;
+}
+section .goods-list li div.goods-pic img {
+	width: 100%;
+	height: 100%;
+}
+
+section .goods-list li div.goods-info {
+	float: right;
+	width: 210px;
+}
+section .goods-list li div.goods-info p.title {
+	text-overflow: ellipsis; 
+	white-space:nowrap;
+	overflow: hidden;
+	font-size: 14px;
+}
+section .goods-list li div.goods-info p.price {
+	line-height: 2rem;
+	color: #0c79cc;
+
+}
+section .goods-list li div.goods-info p.price em {
+	font-weight: bold;
+	margin-right: 10px;
+}
+section .goods-list li div.goods-info p.price i {
+	font-style: normal;
+	color: #000;
+}
+section .goods-list li div.goods-info p.mail {
+	font-size: 14px;
+}
+section .beizhu {
+	margin: 0 15px;
+	padding: 25px 0 25px 6px;
+	border-bottom: 1px solid #e5e5e5;
+}
+section .beizhu input {
+	border: none;
+	outline: none;
+}
+.address {
+	margin: 0 15px;
+	padding-bottom: 120px;
+}
+.address .addlist .addItem {
+	padding: 15px 0;
+	border-bottom: 1px solid #e5e5e5;
+	overflow: hidden;
+}
+
+.address .addlist .addItem .chose {
+	float: left;
+	width: 30px;
+	height: 50px;
+	background: url(../images/chose.png) no-repeat center;
+}
+.address .addlist .addItem .add-info {
+	float: left;
+	padding: 0 20px;
+
+}
+.address .addlist .addItem .add-info p {
+	font-size: 14px;
+	line-height: 25px;
+}
+.address .addlist .addItem .edit {
+	float: right;
+	width: 30px;
+	height: 50px;
+	background: url(../images/edit.png) no-repeat center;
+	background-size: 22px 22px;
+}
+
+
+
+
+
+.address a {
+	display: block;
+	height: 20px;
+	line-height: 20px;
+
+	padding: 25px 0 25px;
+	border-bottom: 1px solid #e5e5e5;
+	font-size: 12px;
+	color: #000;
+}
+.address a::before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	vertical-align: bottom;
+	margin-right: 10px;
+	background: url(../images/address-icon.png) no-repeat;
+	background-size: 20px 20px;
+
+}
+footer {
+	width: 100%;
+	height: 3.3rem;
+	background: #60a9d7;
+	text-align: center;
+	line-height: 3.3rem;
+}
+footer a {
+	color: #fff;
+}
