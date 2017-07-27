@@ -2,7 +2,7 @@
 * @Author: liyangming
 * @Date:   2017-07-24 09:07:12
 * @Last Modified by:   liyangming
-* @Last Modified time: 2017-07-24 10:09:32
+* @Last Modified time: 2017-07-27 18:56:47
 */
 
 'use strict';
@@ -20,3 +20,8 @@ shop.api.fetchGoodsCategory(function(response){
                 </li>');
 	}
 });
+
+
+$('.close-footer').click(function(){
+	$('footer').css("display", "none");
+})

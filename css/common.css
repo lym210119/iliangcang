@@ -2,7 +2,7 @@
 * @Author: liyangming
 * @Date:   2017-07-21 14:53:25
 * @Last Modified by:   liyangming
-* @Last Modified time: 2017-07-25 19:55:33
+* @Last Modified time: 2017-07-27 18:22:17
 */
 
 header {
@@ -137,9 +137,7 @@ footer ul li a {
 footer ul li:first-child a {
 	opacity: 1;
 }
-footer ul li:last-child {
-	display: none;
-}
+
 footer ul li a img {
 	width: 100%;
 	height: 100%;

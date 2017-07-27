@@ -2,7 +2,7 @@
 * @Author: liyangming
 * @Date:   2017-07-22 18:41:55
 * @Last Modified by:   liyangming
-* @Last Modified time: 2017-07-24 10:00:06
+* @Last Modified time: 2017-07-27 18:57:37
 */
 
 body {
@@ -96,7 +96,7 @@ footer .head {
 	background: url(../images/topBg.png);
 	background-size: 100% 100%;
 }
-footer .head span.close {
+footer .head span.close-footer {
 	position: absolute;
 	top: 50%;
 	left: 6px;
@@ -105,7 +105,7 @@ footer .head span.close {
 	height: 15px;
 	transform: translateY(-50%);
 }
-footer .head span.close img {
+footer .head span.close-footer img {
 	width: 100%;
 	height: 100%;
 }

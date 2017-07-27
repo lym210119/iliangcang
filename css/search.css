@@ -2,7 +2,7 @@
 * @Author: liyangming
 * @Date:   2017-07-22 15:47:42
 * @Last Modified by:   liyangming
-* @Last Modified time: 2017-07-22 18:09:41
+* @Last Modified time: 2017-07-27 18:16:35
 */
 
 body {
@@ -30,12 +30,11 @@ header .head {
 }
 header .head span.close {
 	position: absolute;
-	top: 50%;
+	top: 0;
 	left: 6px;
 	display: inline-block;
 	width: 15px;
 	height: 15px;
-	transform: translateY(-50%);
 }
 header .head span.close img {
 	width: 100%;

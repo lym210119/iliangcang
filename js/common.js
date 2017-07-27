@@ -2,10 +2,15 @@
 * @Author: liyangming
 * @Date:   2017-07-22 15:31:51
 * @Last Modified by:   liyangming
-* @Last Modified time: 2017-07-24 20:13:00
+* @Last Modified time: 2017-07-27 18:56:34
 */
 
 'use strict';
+
+
+
+
+
 $.getQueryString = function(name) {
 	var search = location.search.substr(1);
 	var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)');
@@ -148,6 +153,9 @@ $('.search-btn').on("click", function(){
 if (localStorage.getItem("token")) {
     $('.nav-login').hide();
     $('.nav-order').show();
+} else {
+    $('.nav-login').show();
+    $('.nav-order').hide();
 }
 // $(".login-reg").children("a:last").click(function() {
 //     localStorage.clear();
@@ -161,3 +169,5 @@ function updateCartInfo(goods_id, goods_number, callback) {
         callback(response);
     })
 }
+
+

@@ -2,10 +2,24 @@
 * @Author: liyangming
 * @Date:   2017-07-22 15:50:00
 * @Last Modified by:   liyangming
-* @Last Modified time: 2017-07-22 17:58:50
+* @Last Modified time: 2017-07-27 18:56:21
 */
 
 'use strict';
+
+(function(){
+    var close = document.querySelector(".close");
+    console.log(close);
+    var head = document.querySelector(".head");
+    close.addEventListener('click', function(){
+        head.style.display = "none";
+        document.body.style.paddingTop = "2.4rem";
+        $('header').css('height','2.4rem');
+    }, false)
+
+
+    $()
+})();
 
 //获取参数search_text, 然后将内容放到搜索框
 var searchText = $.getQueryString('search_text');
